@@ -5,21 +5,21 @@ if(isDebug){
     var performanceDate = new DateTimeUtility(new Date());
     var Dashboard = {
         url : {
-            getcallresult : '../assets/data/getcallresult.json' //全區/各大區總計 每日新名單
-            ,getctilist : '../assets/data/getctilist.json'  // 全區/各大區總計 每周通時通次?startDate=2016-06-19&endDate=2016-06-27&periodType=2
-            ,getctiagentperformanceSingleMonth : '../assets/data/getctiagentperformanceSingleMonth.json'  //各大區 月份成交件數
-            ,getctiwaterflow : '../assets/data/getctiwaterflow.json'//水位報表 ?recordDate=2016-06-28
-            ,getctiagentperformanceperday : '../assets/data/getctiagentperformanceperday.json' //各大區 單日每小時成交件數?recordDate=2016-07-04
-            ,fireReport : '../assets/data/fireReport.json'  // 小幫手發火監控?startDate=2016-06-28&endDate=2016-06-29
-            ,earth : '../assets/data/earth.json'  // 小幫手發火監控 ?recordDate=2016-07-04&recordHour=16
-            ,gettransbyday : '../assets/data/gettransbyday.json'  // 每日成交數?startDate=2016-05-26&endDate=2016-06-02
-            ,getnewstate: '../assets/data/getnewstate.json'  // 新客戶首課狀態 ?startDate=2016-04-01&endDate=2016-04-16
-            ,getnewpoint : '../assets/data/getnewpoint.json'  // 首課顧問評鑑?startDate=2016-03-01&endDate=2016-04-01
-            ,getnewfire : '../assets/data/getnewfire.json'  // 首課發火率?startDate=2016-03-24&endDate=2016-03-31
-            ,getrefund : '../assets/data/getrefund.json'  // 退費通報數與前三天比較?startDate=2016-04-01&endDate=2016-04-08
-            ,getcare : '../assets/data/getcare.json'  //新客戶成交後，尚未關懷天數?startDate=2015-12-22&endDate=2015-12-30
-            ,getcpctiserv : '../assets/data/getcpctiserv.json'  //客服工作狀態監控統計
-            ,getcpctibusystatus : '../assets/data/getcpctibusystatus.json'  //客服佔線監控
+            getcallresult : '../dashboard/assets/data/getcallresult.json' //全區/各大區總計 每日新名單
+            ,getctilist : '../dashboard/assets/data/getctilist.json'  // 全區/各大區總計 每周通時通次?startDate=2016-06-19&endDate=2016-06-27&periodType=2
+            ,getctiagentperformanceSingleMonth : '../dashboard/assets/data/getctiagentperformanceSingleMonth.json'  //各大區 月份成交件數
+            ,getctiwaterflow : '../dashboard/assets/data/getctiwaterflow.json'//水位報表 ?recordDate=2016-06-28
+            ,getctiagentperformanceperday : '../dashboard/assets/data/getctiagentperformanceperday.json' //各大區 單日每小時成交件數?recordDate=2016-07-04
+            ,fireReport : '../dashboard/assets/data/fireReport.json'  // 小幫手發火監控?startDate=2016-06-28&endDate=2016-06-29
+            ,earth : '../dashboard/assets/data/earth.json'  // 小幫手發火監控 ?recordDate=2016-07-04&recordHour=16
+            ,gettransbyday : '../dashboard/assets/data/gettransbyday.json'  // 每日成交數?startDate=2016-05-26&endDate=2016-06-02
+            ,getnewstate: '../dashboard/assets/data/getnewstate.json'  // 新客戶首課狀態 ?startDate=2016-04-01&endDate=2016-04-16
+            ,getnewpoint : '../dashboard/assets/data/getnewpoint.json'  // 首課顧問評鑑?startDate=2016-03-01&endDate=2016-04-01
+            ,getnewfire : '../dashboard/assets/data/getnewfire.json'  // 首課發火率?startDate=2016-03-24&endDate=2016-03-31
+            ,getrefund : '../dashboard/assets/data/getrefund.json'  // 退費通報數與前三天比較?startDate=2016-04-01&endDate=2016-04-08
+            ,getcare : '../dashboard/assets/data/getcare.json'  //新客戶成交後，尚未關懷天數?startDate=2015-12-22&endDate=2015-12-30
+            ,getcpctiserv : '../dashboard/assets/data/getcpctiserv.json'  //客服工作狀態監控統計
+            ,getcpctibusystatus : '../dashboard/assets/data/getcpctibusystatus.json'  //客服佔線監控
         }
     }
 }else{
