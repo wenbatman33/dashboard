@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iTutorGroup - Dashboard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0, user-scalable=0">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/js/vendor/summernote/css/summernote-bs3.css">
+    <link rel="stylesheet" href="assets/css/c3.css">
+    <link rel="stylesheet" href="assets/css/minimal.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="bg-1">
+
+    <!-- Preloader -->
+    <div class="mask"><div id="loader"></div></div>
+    <!--/Preloader -->
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-transparent-black mm-fixed-top collapsed" role="navigation" id="navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav side-nav" id="sidebar">
+          <li class="navbar-header">
+            <a class="navbar-brand" href="index.html"><strong>iTutorGroup</strong> Dashboard </a>
+            <div class="sidebar-collapse"><a href="javascript:;"><i class="fa fa-bars"></i></a></div>
+          </li>
+          <li class="navigation" id="navigation">
+            <ul class="menu">
+              <li><a href="index.html"><i class="glyphicon glyphicon-list-alt"></i> 成交/高退費族群相關</a></li>
+              <li><a href="page3-2.html"><i class="fa fa-bar-chart-o"></i> CTI 撥號/業務撥打狀況監控</a></li>
+              <li class="active"><a href="page3-3.html"><i class="fa fa-phone"></i> CP CTI</a></li>
+              <li><a href="page3-4.html"><i class="glyphicon glyphicon-fire"></i> 小幫手發火監控</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Fixed navbar end -->
+    
+    <div id="wrap">
+      <!-- Make page fluid -->
+      <div class="row hgfix">
+        <!-- Page content -->
+        <div id="content" class="col-md-12">
+          <!-- page header -->
+          <div class="pageheader">
+            <h2><i class="fa fa-phone"></i> <tspan>CP CTI</tspan></h2>
+            <div class="toogleBtn">
+              <button type="button" class="btn btn-greensea openAll">全部展開 <i class="fa fa-chevron-down"></i></button>
+              <button type="button" class="btn btn-slategray closeAll hide" >全部收起 <i class="fa fa-chevron-up"></i></button>
+            </div>
+          </div>
+          <!-- /page header -->
+          <!-- content main container -->
+          <div class="main">
+
+              <!-- 客服工作狀態監控統計 -->
+              <div class="col-md-12">
+                <section class="tile color transparent-white">
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>客服工作狀態監控統計</strong></h1>
+                    <div class="controls">
+                      <a href="javascript:;" class="minimize"><i class="fa fa-chevron-down"></i></a>
+                      <a href="javascript:;" class="question"><i class="fa fa-question-circle"></i></a>
+                    </div>
+                    <h4 id="db3_3_1" class="note"></h4>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+                    <hr>
+                    <h3 class="cpTTitle">TurtorABC</h3>
+                    <div id="cp-1T"></div>
+                    <h3 class="cpVTitle">vipabc</h3>
+                    <div id="cp-1V"></div>
+                  </div>
+                  <!-- /tile body -->
+
+                </section>
+              </div>
+              <!-- end/客服工作狀態監控統計 -->
+
+              <!-- 客服佔線監控 -->
+              <div class="col-md-12 mg-btm-60">
+                <section class="tile color transparent-white">
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>客服佔線監控</strong> <span ></span></h1>
+                    <div class="controls">
+                      <a href="javascript:;" class="minimize"><i class="fa fa-chevron-down"></i></a>
+                      <a href="javascript:;" class="question"><i class="fa fa-question-circle"></i></a>
+                    </div>
+                    <h4 id="db3_3_2" class="note"></h4>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+                    <hr>
+                    <h3 class="cpTTitle">TurtorABC</h3>
+                    <div id="cp-2T"></div>
+                    <h5 class="cpdate">日期：<span id="cpDateT"></span> / 人員利用率：<span id="cpAllPeopleT"></span> / 本日滿載時間累計：<span id="cpOccupiedT"></span>分鐘</h5>
+                    
+                    <h3 class="cpVTitle">vipabc</h3>
+                    <div id="cp-2V"></div>
+                    <h5 class="cpdate">日期：<span id="cpDateV"></span> / 人員利用率：<span id="cpAllPeopleV"></span> / 本日滿載時間累計：<span id="cpOccupiedV"></span>分鐘</h5>
+                  </div>
+                  <!-- /tile body -->
+
+                </section>
+              </div>
+              <!-- end/客服佔線監控 -->
+
+          </div>
+          <!-- /content main container -->
+        </div>
+        <!-- Page content end -->
+      </div>
+      <!-- Make page fluid-->
+    </div>
+    <!-- Wrap all page content end -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap/bootstrap-dropdown-multilevel.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/mmenu/js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/vendor/nicescroll/jquery.nicescroll.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/vendor/blockui/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="assets/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="assets/js/minimal.js"></script>
+    <script type="text/javascript" src="assets/js/c3.js"></script>
+    <script type="text/javascript" src="assets/js/date.format.js"></script>
+    <script type="text/javascript" src="assets/js/dashboardcfg.js"></script>
+    <script type="text/javascript" src="assets/js/c3-cp.js"></script>
+    <script type="text/javascript" src="assets/js/comm.js"></script>
+  </body>
+</html>

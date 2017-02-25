@@ -1,0 +1,128 @@
+html{
+  background: black;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  background: #000;
+}
+canvas{
+  animation: in 2s cubic-bezier(0.23, 1, 0.32, 1) 0.25s backwards;
+  background: transparent;
+  position: absolute;
+}
+.dataInfo{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  color: #fff;
+  padding: 10px;
+  pointer-events: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+  text-align: left;
+
+  #time{
+    margin-top: 80px;
+    font-size: 20px;
+    //margin-top: 10px;
+    line-height: 1;
+    text-align: center;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    text-shadow: 0px 0px 10px #000;
+  }
+  #fname{
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 10px;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #000;
+  }
+  #city{
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 15px;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #000;
+  }
+  #SiriWave{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 320px;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //border-top: 1px solid rgba(255,255,255,0.3);
+    //border-bottom: 1px solid rgba(255,255,255,0.3);
+    canvas{
+      position: relative;
+    }
+  }
+}
+
+@keyframes in{
+  from {
+    opacity: 0;
+  }
+}
+#typed{
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  color: #fff;
+  padding: 10px;
+
+}
+#container{
+  position: absolute;
+  top: 0;
+}
+.test{
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+  color: #fff;
+  padding: 10px;
+  display: none;
+  input{
+    color: red;
+
+  }
+}
+.debug{
+  position: absolute;
+  color: #fff;
+  z-index: 9999999;
+  width: 100%;
+  margin:10px;
+  text-align: center;
+  bottom:30px;
+  button{
+    -webkit-appearance: none;
+    outline:0;
+    border: none;
+    border: 1px solid #666;
+    color: #999;
+    background: rgba(255,255,255,0);
+    height: 50px;
+    width: 120px;
+    margin: 10px;
+    padding: 6px;
+    &:hover{
+      border: 1px solid #fff;
+      color: #ffffff;
+    }
+  }
+}

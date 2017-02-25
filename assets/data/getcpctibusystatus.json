@@ -1,0 +1,1 @@
+{"status": {"msg": "Missing Param", "code": -110002}, "data": [{"brandId": "required"}, {"startDateTime": "required"}, {"endDateTime": "required"}]}

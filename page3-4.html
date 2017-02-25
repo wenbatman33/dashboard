@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iTutorGroup - Dashboard</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0, user-scalable=0">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/js/vendor/summernote/css/summernote-bs3.css">
+    <link rel="stylesheet" href="assets/css/c3.css">
+    <link rel="stylesheet" href="assets/css/minimal.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="bg-1">
+
+    <!-- Preloader -->
+    <div class="mask"><div id="loader"></div></div>
+    <!--/Preloader -->
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-transparent-black mm-fixed-top collapsed" role="navigation" id="navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav side-nav" id="sidebar">
+          <li class="navbar-header">
+            <a class="navbar-brand" href="index.html"><strong>iTutorGroup</strong> Dashboard </a>
+            <div class="sidebar-collapse"><a href="javascript:;"><i class="fa fa-bars"></i></a></div>
+          </li>
+          <li class="navigation" id="navigation">
+            <ul class="menu">
+              <li><a href="index.html"><i class="glyphicon glyphicon-list-alt"></i> 成交/高退費族群相關</a></li>
+              <li><a href="page3-2.html"><i class="fa fa-bar-chart-o"></i> CTI 撥號/業務撥打狀況監控</a></li>
+              <li><a href="page3-3.html"><i class="fa fa-phone"></i> CP CTI</a></li>
+              <li class="active"><a href="page3-4.html"><i class="glyphicon glyphicon-fire"></i> 小幫手發火監控</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Fixed navbar end -->
+    
+    <div id="wrap">
+      <!-- Make page fluid -->
+      <div class="row hgfix">
+        <!-- Page content -->
+        <div id="content" class="col-md-12">
+          <!-- page header -->
+          <div class="pageheader">
+            <h2><i class="glyphicon glyphicon-fire"></i> <tspan>小幫手發火監控</tspan></h2>
+            <div class="toogleBtn">
+              <button type="button" class="btn btn-greensea openAll">全部展開 <i class="fa fa-chevron-down"></i></button>
+              <button type="button" class="btn btn-slategray closeAll hide" >全部收起 <i class="fa fa-chevron-up"></i></button>
+            </div>
+          </div>
+          <!-- /page header -->
+          <!-- content main container -->
+          <div class="main">
+
+              <!-- 小幫手發火監控 -->
+              <div class="col-md-12">
+                <section class="tile color transparent-white Space">
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>即時發火監控</strong></h1>
+                    <div class="controls">
+                      <a href="javascript:;" class="minimize"><i class="fa fa-chevron-down"></i></a>
+                      <a href="javascript:;" class="question"><i class="fa fa-question-circle"></i></a>
+                    </div>
+                    <h4 id="db3_4_1" class="note"></h4>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+                    <hr>
+                    <iframe src="earth/earth.html" frameBorder="0" style="" height="100%" width="100%"></iframe>
+                  </div>
+                  <!-- /tile body -->
+
+                </section>
+              </div>
+              <!-- end/小幫手發火監控 -->
+
+              <!-- 發火統計(週) -->
+              <div class="col-md-12 mg-btm-60">
+                <section class="tile color transparent-black">
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>發火統計<span id="fire-date"></span></strong></h1>
+                    <div class="controls">
+                      <a href="javascript:;" class="minimize"><i class="fa fa-chevron-down"></i></a>
+                      <a href="javascript:;" class="question"><i class="fa fa-question-circle"></i></a>
+                    </div>
+                    <h4 id="db3_4_2" class="note"></h4>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+                    <hr>
+                    <div id="fire-chart"></div>
+                  </div>
+                  <!-- /tile body -->
+
+                </section>
+              </div>
+              <!-- end/發火統計(週) -->
+
+          </div>
+          <!-- /content main container -->
+        </div>
+        <!-- Page content end -->
+      </div>
+      <!-- Make page fluid-->
+    </div>
+    <!-- Wrap all page content end -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap/bootstrap-dropdown-multilevel.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/mmenu/js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/vendor/nicescroll/jquery.nicescroll.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/vendor/blockui/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="assets/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="assets/js/minimal.js"></script>
+    <script type="text/javascript" src="assets/js/c3.js"></script>
+    <script type="text/javascript" src="assets/js/date.format.js"></script>
+    <script type="text/javascript" src="assets/js/dashboardcfg.js"></script>
+    <script type="text/javascript" src="assets/js/c3-fire.js"></script>
+    <script type="text/javascript" src="assets/js/comm.js"></script>
+  </body>
+</html>
